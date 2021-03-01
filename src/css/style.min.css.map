@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../blocks/style.scss",
+        "../base/_variables.scss",
+        "../base/_mixins.scss"
+    ],
+    "names": [],
+    "file": "style.min.css"
+}
