@@ -2,42 +2,67 @@
     padding: 81px 0 82px 0;
     &__inner{
         position: relative;
-        width: 650px;
-        margin: 0 auto;
+        // margin: 0 auto;
+        // width: 650px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
         img{
             display: block;
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
-    }
-    .slick-prev{
-        position: absolute;
-        top: 50%;
-        transform:translateY(-50%);
-        left: -66px;
-
-        border: none;
-        background-color: $white;
-        img{
-            width: 31px;
+        .slick-prev{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -90px;
+            
+            border: none;
+            font-size: 0;
+            width: 30px;
             height: 50px;
-        }
-    }
-    .slick-next{
-        position: absolute;
-        top: 50%;
-        transform:translateY(-50%);
-        right: -66px;
+            background-image: url('../../img/slide_prev.png');
+            background-color: #fff;
 
-        border: none;
-        background-color: $white;
-        img{
-            width: 31px;
+        }
+        .slick-next{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: -90px;
+
+            border: none;
+            font-size: 0;
+            width: 30px;
             height: 50px;
+            background-image: url('../../img/slide_next.png');
+            background-color: #fff;
         }
-    }
+        .slick-dots{
+            display: flex;
+            list-style-type: none;
+            justify-content: center;
+            button{
+                font-size: 0;
+                border: none;
+                background-color: transparent;
+                border: 1px solid gray;
+                width: 13px;
+                height: 13px;
+                margin-right: 5px;
+                border-radius: 50%;
 
-    
+                transition: .5s all;
+            }
+            .slick-active{
+                button{
+                    border: 1px solid black;
+                }
+            }
+        }
+
+
+    }
 }
-
