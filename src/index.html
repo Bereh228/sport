@@ -1,15 +1,16 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/blocks/style.min.css">
     <title>Hello, world!</title>
   </head>
   <body>
-    <section class="promo">
+    <section class="promo" id="up">
       <div class="container">
         <header class="header">
           <a href="#" class="header__logo">
@@ -58,12 +59,12 @@
       </div>
     </section>
 
-    <section class="advantage">
+    <div class="advantage">
       <div class="container">
 
         <div class="advantage__wrapper">
 
-          <div class="advantage__block">
+          <div class="advantage__block backInLeft wow" data-wow-duration="1.5s" data-wow-delay=".2s">
             <div class="advantage__round">
               <img src="icons/cup.png" alt="cup">
             </div>
@@ -74,9 +75,9 @@
             </div>
           </div>
 
-          <div class="advantage__block">
+          <div class="advantage__block backInUp wow" data-wow-duration="1.5s" data-wow-delay=".2s">
             <div class="advantage__round">
-              <img src="icons/heart.png" alt="cup">
+              <img src="icons/heart.png" alt="cup" class="advantages__icon_animated">
             </div>
             <div class="advantage__descr">
               <div class="advantage__subtitle">Заботимся о здоровье</div>
@@ -86,7 +87,7 @@
             </div>
           </div>
 
-          <div class="advantage__block">
+          <div class="advantage__block backInRight wow" data-wow-duration="1.5s" data-wow-delay=".2s">
             <div class="advantage__round">
               <img src="icons/shoe.png" alt="cup">
             </div>
@@ -101,7 +102,7 @@
         </div>
         
       </div>
-    </section>
+    </div>
     
     <section class="consultation">
       <div class="container">
@@ -114,7 +115,7 @@
 
         <form id="consultation-form" class="feed-form" action="#">
           <input name="name" type="text" minlength="2" placeholder="Ваше имя" required>
-          <input name="phone" type="number" placeholder="Ваш телефон" required>
+          <input name="phone" placeholder="Ваш телефон" required>
           <input name="email" type="email" minlength="12" placeholder="Ваш E-mail" required>
           <button type="submit" class="button button_submit modal__sub">ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</button>
         </form>
@@ -122,7 +123,7 @@
       </div> <!-- container -->
     </section> <!-- .consultation -->
     
-   <section class="corousel">
+   <div class="corousel">
      <div class="container">
       <div class="corousel__inner">
         <div>
@@ -136,7 +137,7 @@
         </div>
       </div>
      </div>
-   </section>
+   </div>
   
     <section class="catalog">
      <div class="container">
@@ -148,7 +149,7 @@
        </ul>
 
        <div class="catalog__content catalog__content_active">
-         <div class="catalog-item">
+         <div class="catalog-item backInRight wow" data-wow-duration=".8s" data-wow-delay=".5s">
            <div class="catalog-item__wrapper">
              <div class="catalog-item__content catalog-item__content_active">
               <img src="img/pulsometer.png" alt="pulsometer" class="catalog-item__img">
@@ -174,7 +175,7 @@
             <button class="button button_mini">Купить</button>
           </div>
          </div>
-         <div class="catalog-item">
+         <div class="catalog-item backInRight wow" data-wow-duration=".8s" data-wow-delay=".8s">
           <div class="catalog-item__wrapper">
             <div class="catalog-item__content catalog-item__content_active">
              <img src="img/pulsometer.png" alt="pulsometer" class="catalog-item__img">
@@ -200,7 +201,7 @@
            <button class="button button_mini">Купить</button>
          </div>
         </div>
-        <div class="catalog-item">
+        <div class="catalog-item backInRight wow" data-wow-duration=".8s" data-wow-delay="1.1s">
           <div class="catalog-item__wrapper">
             <div class="catalog-item__content catalog-item__content_active">
              <img src="img/pulsometer.png" alt="pulsometer" class="catalog-item__img">
@@ -226,7 +227,7 @@
            <button class="button button_mini">Купить</button>
          </div>
         </div>
-        <div class="catalog-item">
+        <div class="catalog-item backInRight wow" data-wow-duration=".8s" data-wow-delay="1.4s">
           <div class="catalog-item__wrapper">
             <div class="catalog-item__content catalog-item__content_active">
              <img src="img/pulsometer.png" alt="pulsometer" class="catalog-item__img">
@@ -252,7 +253,7 @@
            <button class="button button_mini">Купить</button>
          </div>
         </div>
-        <div class="catalog-item">
+        <div class="catalog-item backInRight wow" data-wow-duration=".8s" data-wow-delay="1.7s">
           <div class="catalog-item__wrapper">
             <div class="catalog-item__content catalog-item__content_active">
              <img src="img/pulsometer.png" alt="pulsometer" class="catalog-item__img">
@@ -278,7 +279,7 @@
            <button class="button button_mini">Купить</button>
          </div>
         </div>
-        <div class="catalog-item">
+        <div class="catalog-item backInRight wow" data-wow-duration=".8s" data-wow-delay="2s">
           <div class="catalog-item__wrapper">
             <div class="catalog-item__content catalog-item__content_active">
              <img src="img/pulsometer.png" alt="pulsometer" class="catalog-item__img">
@@ -307,7 +308,7 @@
        </div> <!-- catalog content 1-->
 
        <div class="catalog__content">
-        <div class="catalog-item">
+        <div class="catalog-item backInRight wow" data-wow-duration=".8s" data-wow-delay=".5s">
           <div class="catalog-item__wrapper">
             <div class="catalog-item__content catalog-item__content_active">
              <img src="img/pulsometer.png" alt="pulsometer" class="catalog-item__img">
@@ -335,7 +336,7 @@
         </div>
        </div> <!-- catalog content 2-->
        <div class="catalog__content">
-        <div class="catalog-item">
+        <div class="catalog-item backInRight wow" data-wow-duration=".8s" data-wow-delay=".8s">
           <div class="catalog-item__wrapper">
             <div class="catalog-item__content catalog-item__content_active">
              <img src="img/pulsometer.png" alt="pulsometer" class="catalog-item__img">
@@ -361,7 +362,7 @@
            <button class="button button_mini">Купить</button>
          </div>
         </div>
-        <div class="catalog-item">
+        <div class="catalog-item backInRight wow" data-wow-duration=".8s" data-wow-delay="1.1s">
           <div class="catalog-item__wrapper">
             <div class="catalog-item__content catalog-item__content_active">
              <img src="img/pulsometer.png" alt="pulsometer" class="catalog-item__img">
@@ -397,7 +398,7 @@
        <h2 class="title">Отзывы клиентов</h2>
 
        <div class="review__main-block">
-         <div class="review__block">
+         <div class="review__block fadeInTopLeft wow" data-wow-delay=".5s">
            <div class="review__block-round">
              <img src="icons/people_first.png" alt="people_first">
            </div>
@@ -413,7 +414,7 @@
               </div>
            </div> 
         </div> 
-        <div class="review__block">
+        <div class="review__block fadeInTopRight wow" data-wow-delay=".5s">
           <div class="review__block-round">
             <img src="icons/people_two.png" alt="people_two">
           </div>
@@ -427,7 +428,7 @@
              </div>
           </div> 
        </div> 
-       <div class="review__block">
+       <div class="review__block fadeInUp wow" data-wow-delay=".5s"> 
         <div class="review__block-round">
           <img src="icons/people_third.png" alt="people_third">
         </div>
@@ -474,9 +475,9 @@
     <div class="modal__subtitle">Просто заполните форму заявки</div>
     <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
     <form class="feed-form feed-form_mt25" action="#">
-      <input name="name" type="text" minlength="2" placeholder="Ваше имя" required>
-      <input name="phone" type="number" placeholder="Ваш телефон" required>
-      <input name="email" type="email"  minlength="12" placeholder="Ваш E-mail" required>
+      <input name="name" type="text" minlength="2" placeholder="Ваше имя">
+      <input name="phone"  placeholder="Ваш телефон">
+      <input name="email" type="email"  minlength="12" placeholder="Ваш E-mail">
       <button type="submit" class="button button_submit modal__sub">ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</button>
     </form>
   </div>
@@ -486,9 +487,9 @@
     <div class="modal__subtitle">Ваш заказ</div>
     <div class="modal__descr">Пульсометр Polar FT1</div>
     <form class="feed-form feed-form_mt25" action="#">
-      <input name="name" type="text" minlength="2" placeholder="Ваше имя" required>
-      <input name="phone" type="number" placeholder="Ваш телефон" required>
-      <input name="email" type="email" minlength="12" placeholder="Ваш E-mail" required>
+      <input name="name" type="text" minlength="2" placeholder="Ваше имя">
+      <input name="phone" placeholder="Ваш телефон">
+      <input name="email" type="email" minlength="12" placeholder="Ваш E-mail">
       <button type="submit" class="button button_submit modal__sub">Купить</button>
     </form>
   </div>
@@ -498,13 +499,18 @@
     <div class="modal__subtitle">Спасибо за вашу заявку!</div>
     <div class="modal__descr">Наш менеджер свяжется с вами в ближайшее время!</div>
   </div>
-
 </div>
+
+<a href="#up" class="pageup">
+  <img src="icons/upt.png" alt="">
+</a>
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

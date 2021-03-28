@@ -31,6 +31,12 @@
         font-size: 14px;
         color: $black;
     }
+    &s__icon_animated{
+        animation: heartbeat 1.5s linear infinite;
+        &:hover{
+            animation-play-state: paused;
+        }
+    }
 
     @media (max-width: 575px){
         .advantage{

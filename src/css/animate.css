@@ -1,0 +1,16 @@
+@import '../css/_base.css';
+@import '../css/_vars.css';
+
+/* Fading entrances  */
+@import 'fadeInTopLeft.css';
+@import 'fadeInTopRight.css';
+@import 'fadeInUp.css';
+
+/* Backing entraces */
+@import '../css/backInLeft.css';
+@import '../css/backInRight.css';
+@import '../css/backInUp.css';
+
+
+
+
